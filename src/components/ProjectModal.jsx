@@ -42,13 +42,13 @@ export default function ProjectModal() {
         <WindowChrome path={project.filePath}>
           {project.imageSrc ? (
             <img
-              src={`${import.meta.env.BASE_URL}${project.imageSrc}`}
+              src={project.imageSrc}
               alt={project.title}
               className="w-full object-cover"
             />
           ) : (
             <VideoPlaceholder
-              videoSrc={`${import.meta.env.BASE_URL}${project.videoSrc}`}
+              videoSrc={project.videoSrc}
               title={project.title}
               size="large"
             />

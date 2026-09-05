@@ -32,13 +32,13 @@ export default function ProjectCard({ project, index = 0 }) {
         >
           {project.imageSrc ? (
             <img
-              src={`${import.meta.env.BASE_URL}${project.imageSrc}`}
+              src={project.imageSrc}
               alt={project.title}
               className="h-48 w-full object-cover"
             />
           ) : (
             <VideoPlaceholder
-              videoSrc={`${import.meta.env.BASE_URL}${project.videoSrc}`}
+              videoSrc={project.videoSrc}
               title={project.title}
             />
           )}
